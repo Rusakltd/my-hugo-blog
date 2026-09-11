@@ -14,7 +14,7 @@ timeZone = "Europe/Moscow"
 # Активная тема. Варианты: meridian · manuscript · signal · midnight
 # Переключение = правка этой строки. Быстрый предпросмотр без правки:
 #   hugo server --theme manuscript
-theme = "signal"
+theme = "meridian"
 enableRobotsTXT = true
 
 [params]
