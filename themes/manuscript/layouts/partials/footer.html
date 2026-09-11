@@ -7,7 +7,7 @@
   <nav class="site-footer__links" aria-label="Подвал">
     {{- with $l.telegram }}<a href="{{ . }}" target="_blank" rel="noopener">Телеграм</a>{{ end }}
     {{- with $l.github }}<span class="dot" aria-hidden="true">·</span><a href="{{ . }}" target="_blank" rel="noopener">Гитхаб</a>{{ end }}
-    {{- with $l.email }}<span class="dot" aria-hidden="true">·</span><a href="mailto:{{ replace . "@" "&#64;" | safeHTML }}">{{ replace . "@" "&#64;" | safeHTML }}</a>{{ end }}
+    {{- with $l.email }}<span class="dot" aria-hidden="true">·</span><a href="mailto:{{ . }}">{{ replace . "@" "&#64;" | safeHTML }}</a>{{ end }}
     <span class="dot" aria-hidden="true">·</span><a href="{{ "index.xml" | absURL }}">RSS</a>
   </nav>
 </footer>

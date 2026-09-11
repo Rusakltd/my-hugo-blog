@@ -59,7 +59,7 @@
     <p class="lead">{{ . }}</p>
     <p class="cta">
       {{- with $links.telegram }}<a href="{{ . }}" target="_blank" rel="noopener">Телеграм</a>{{ end }}
-      {{- with $links.email }} · <a href="mailto:{{ replace . "@" "&#64;" | safeHTML }}">почта</a>{{ end }}
+      {{- with $links.email }} · <a href="mailto:{{ . }}">почта</a>{{ end }}
       {{- with $links.github }} · <a href="{{ . }}" target="_blank" rel="noopener">гитхаб</a>{{ end }}
     </p>
   </div>
